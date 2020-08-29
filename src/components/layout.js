@@ -19,12 +19,11 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           color: #555;
-          font-family: -apple-system, BlinkMacSystenFont, 'Segoe UI', Roboto,
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
             Helvetica, Arial, sans-serif;
           font-size: 18px;
           line-height: 1.4;
 
-          /* remove margin for the main dix that Gatsby mounts into */
           > div {
             margin-top: 0;
           }
