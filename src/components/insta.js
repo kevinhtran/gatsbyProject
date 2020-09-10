@@ -5,20 +5,20 @@ import useInstagram from '../hooks/use-instagram';
 
 const Insta = () => {
   const instaPhotos = useInstagram();
-  const { kevdeveloper } = instaPhotos[0];
+  const { username } = instaPhotos[0];
 
   return (
     <>
-      <h2>Instagram posts from @kevdeveloper</h2>
+      <h2>Instagram posts from @gatsbyjs</h2>
       <div>
         {instaPhotos.map(photo => (
           <>
-            <h2>Instagram posts from @{kevdeveloper}</h2>
+            <h2>Instagram posts from @{username}</h2>
             <div>
               {instaPhotos.map(photo => (
                 <a
                   key={photo.id}
-                  href={`https://www.instagram.com/p/B43n271gGYI/`}
+                  href={`https://www.instagram.com/${username}`}
                   css={css`
                     box-shadow: 0;
                     display: block;
@@ -50,7 +50,7 @@ const Insta = () => {
           </>
         ))}
       </div>
-      <a href={`https://instagram.com/kevdeveloper`}>
+      <a href={`https://instagram.com/gatsbyjs`}>
         See more on Instagram &rarr;
       </a>
     </>
